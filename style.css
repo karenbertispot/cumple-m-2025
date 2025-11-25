@@ -3,8 +3,8 @@ body {
 }
 
 .morph-section {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 
   position: absolute;
   left: 50%;
@@ -16,15 +16,34 @@ body {
 }
 
 .info {
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'DotGothic16', monospace;
   position: absolute;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 24px;
-  left: ;
-  bottom: ;
+  left: 20px;
+  bottom: 20px;
   color: #fff;
 }
 
 a {
-  color: #f9f9f9;
+  color: #f9f9f9;
+}
+
+/* --- CÓDIGO RESPONSIVE (CELULAR) --- */
+@media (max-width: 600px) {
+    
+    /* Ajustamos el tamaño del arte ASCII para que quepa bien */
+    .morph-section {
+        width: 300px !important; 
+        height: 300px !important;
+        margin-top: -150px !important;
+        margin-left: -150px !important;
+        font-size: 1.5em !important; 
+    }
+
+    /* Aseguramos que el mensaje .info sea grande en el celular */
+    .info {
+        font-size: 2.2em !important; 
+        bottom: 10px !important;
+    }
 }
